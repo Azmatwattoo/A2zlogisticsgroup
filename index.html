@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="A2Z Logistics Group provides regional and short-haul logistics solutions in Dubai, UAE. Contact our team for your transport requirements.">
+  <title>A2Z Logistics Group | Regional & Short-Haul Logistics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #071426;
+      --navy-2: #0b1e35;
+      --navy-3: #102944;
+      --orange: #ff8a24;
+      --orange-light: #ffb05c;
+      --white: #ffffff;
+      --text: #182638;
+      --muted: #69788b;
+      --light: #f4f7fb;
+      --border: #e3e9f0;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(7, 20, 38, .10);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 96px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #e66f0b;
+      background: #fff0e1;
+      border-radius: 100px;
+      padding: 7px 13px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      margin-bottom: 19px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    .section-heading {
+      max-width: 690px;
+      margin-bottom: 44px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 45px);
+      letter-spacing: -1.5px;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 620px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border-radius: 9px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--navy);
+      box-shadow: 0 8px 24px rgba(255, 138, 36, .20);
+    }
+
+    .btn-primary:hover {
+      background: var(--orange-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.38);
+      color: var(--white);
+      background: rgba(255,255,255,.04);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,.12);
+    }
+
+    .topbar {
+      background: #04101f;
+      color: #d4deeb;
+      font-size: 12px;
+      padding: 9px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .topbar-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .topbar a:hover {
+      color: var(--orange-light);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 20, 38, .97);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      background: var(--orange);
+      color: var(--navy);
+      border-radius: 12px;
+      font-family: "Manrope", sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .brand-copy strong {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 15px;
+      line-height: 1.25;
+      letter-spacing: -.4px;
+    }
+
+    .brand-copy small {
+      color: #a9b9cb;
+      display: block;
+      font-size: 10px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+        .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .nav-links a {
+      color: #d5dfeb;
+      font-size: 13px;
+      font-weight: 700;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      padding: 11px 16px;
+      border-radius: 8px;
+      background: var(--orange);
+      color: var(--navy) !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 9px;
+      background: transparent;
+      color: white;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(5,17,32,.97) 0%, rgba(5,17,32,.90) 48%, rgba(5,17,32,.55) 100%),
+        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 470px;
+      height: 470px;
+      border-radius: 50%;
+      right: -130px;
+      top: -160px;
+      border: 1px solid rgba(255,138,36,.24);
+      box-shadow: 0 0 0 55px rgba(255,138,36,.035),
+                  0 0 0 110px rgba(255,138,36,.025);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 90px 0 100px;
+      max-width: 750px;
+    }
+
+    .hero .eyebrow {
+      color: var(--orange-light);
+      background: rgba(255,138,36,.12);
+      border: 1px solid rgba(255,138,36,.24);
+    }
+
+    .hero h1 {
+      font-size: clamp(39px, 6.1vw, 72px);
+      letter-spacing: -2.7px;
+      margin-bottom: 24px;
+      max-width: 780px;
+    }
+
+    .hero h1 span {
+      color: var(--orange);
+    }
+
+    .hero-description {
+      max-width: 590px;
+      color: #d3deea;
+      font-size: 17px;
+      line-height: 1.9;
+      margin-bottom: 31px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #c4d1df;
+      font-size: 12px;
+    }
+
+    .hero-note span {
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(255,138,36,.12);
+    }
+
+    .quick-info {
+      position: relative;
+      margin-top: -44px;
+      z-index: 5;
+    }
+
+    .quick-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: white;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .quick-info-item {
+      padding: 25px 28px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .quick-info-item + .quick-info-item {
+      border-left: 1px solid var(--border);
+    }
+
+    .info-icon {
+      width: 47px;
+      height: 47px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: #fff0e1;
+      color: #db6b0a;
+      border-radius: 12px;
+      font-size: 22px;
+    }
+
+    .quick-info-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .quick-info-item p,
+    .quick-info-item a {
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .about-visual {
+      position: relative;
+      min-height: 440px;
+    }
+
+    .about-image {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-label {
+      position: absolute;
+      right: -20px;
+      bottom: 20px;
+      background: var(--orange);
+      color: var(--navy);
+      padding: 23px 27px;
+      border-radius: 13px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .about-label strong {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 21px;
+    }
+
+    .about-label span {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .about-copy h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -1.5px;
+      margin-bottom: 19px;
+    }
+
+    .about-copy > p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 30px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .check {
+      display: grid;
+      place-items: center;
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #e4f7ec;
+      color: #16844a;
+      font-size: 13px;
+      margin-top: 1px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      position: relative;
+      padding: 31px 27px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: transform .25s ease, box-shadow .25s ease,
+                  border-color .25s ease;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: #ffd0a4;
+    }
+
+    .service-number {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      color: #e7edf4;
+      font-size: 35px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 900;
+    }
+
+    .service-icon {
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--orange);
+      font-size: 25px;
+      border-radius: 14px;
+      margin-bottom: 24px;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 13px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      color: #d96807;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .service-link:hover {
+      color: var(--navy);
+      }
+
+        .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .why-copy h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      letter-spacing: -1.4px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .why-copy > p {
+      color: #bdcada;
+      margin-bottom: 28px;
+    }
+
+    .why-section {
+      background:
+        radial-gradient(circle at 90% 10%, rgba(255,138,36,.11), transparent 28%),
+        var(--navy);
+      color: white;
+    }
+
+    .why-section .eyebrow {
+      color: var(--orange-light);
+      background: rgba(255,138,36,.12);
+    }
+
+    .why-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .why-feature {
+      padding: 22px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 13px;
+    }
+
+    .why-feature .feature-icon {
+      color: var(--orange);
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .why-feature h3 {
+      font-size: 16px;
+      margin-bottom: 9px;
+    }
+
+    .why-feature p {
+      font-size: 13px;
+      color: #bdcada;
+    }
+
+    .why-visual {
+      position: relative;
+      min-height: 410px;
+    }
+
+    .why-visual img {
+      width: 100%;
+      height: 410px;
+      object-fit: cover;
+      border-radius: 17px;
+      opacity: .88;
+    }
+
+    .why-image-caption {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(4,16,31,.88);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.14);
+    }
+
+    .why-image-caption strong {
+      display: block;
+      color: var(--orange);
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .why-image-caption p {
+      color: #d5dfeb;
+      font-size: 13px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 23px;
+    }
+
+    .process-card {
+      position: relative;
+      padding: 25px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .process-step {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 19px;
+    }
+
+    .process-card h3 {
+      font-size: 17px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cta-banner {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      background: var(--orange);
+      border-radius: 18px;
+      padding: 43px 45px;
+    }
+
+    .cta-banner::after {
+      content: "A2Z";
+      position: absolute;
+      right: 25%;
+      top: -70px;
+      font-size: 190px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 900;
+      color: rgba(7,20,38,.055);
+      pointer-events: none;
+    }
+
+    .cta-banner > div,
+    .cta-banner > a {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(25px, 3.4vw, 37px);
+      color: var(--navy);
+      margin-bottom: 9px;
+    }
+
+    .cta-banner p {
+      color: #44311e;
+      font-size: 14px;
+    }
+
+    .cta-banner .btn {
+      background: var(--navy);
+      color: white;
+      white-space: nowrap;
+    }
+
+    .cta-banner .btn:hover {
+      background: #123052;
+    }
+
+    .quote-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .quote-info {
+      background: var(--navy);
+      color: white;
+      padding: 35px;
+      border-radius: 17px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quote-info::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 35px solid rgba(255,138,36,.10);
+      right: -110px;
+      bottom: -110px;
+    }
+
+    .quote-info h3 {
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .quote-info > p {
+      color: #c1ccda;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      margin: 22px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-line .line-icon {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: rgba(255,138,36,.13);
+      color: var(--orange);
+      font-size: 18px;
+    }
+
+    .contact-line small {
+      display: block;
+      color: #aab9ca;
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .contact-line strong,
+    .contact-line a {
+      display: block;
+      color: white;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-line a:hover {
+      color: var(--orange);
+    }
+
+    .quote-form {
+      padding: 34px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      box-shadow: 0 10px 35px rgba(7,20,38,.045);
+    }
+
+    .quote-form h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .form-intro {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      color: #26364a;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #dce4ed;
+      border-radius: 8px;
+      color: var(--text);
+      background: #fbfcfe;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(255,138,36,.12);
+    }
+
+    .form-group textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .quote-form .btn {
+      margin-top: 20px;
+      width: 100%;
+      border: 0;
+    }
+
+    .form-disclaimer {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 13px;
+      text-align: center;
+    }
+
+        .faq-list {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 13px;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      padding: 21px 23px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      color: #d96e0d;
+      font-size: 22px;
+      flex-shrink: 0;
+      transition: transform .2s ease;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 23px 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-item.open .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+    .footer {
+      background: #04101f;
+      color: #c4d0de;
+      padding: 70px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr 1fr;
+      gap: 55px;
+      padding-bottom: 50px;
+    }
+
+    .footer-about p {
+      color: #9eafc2;
+      font-size: 13px;
+      margin-top: 20px;
+      max-width: 360px;
+    }
+
+    .footer h3 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 11px;
+    }
+
+    .footer-links a {
+      color: #aab9ca;
+      font-size: 13px;
+      transition: color .2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--orange);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 11px;
+      color: #8fa0b4;
+    }
+
+    .footer-bottom strong {
+      color: var(--orange);
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 11px;
+      background: var(--orange);
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 900;
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: .2s ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 16px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .brand-copy strong {
+        font-size: 13px;
+      }
+
+      .about-grid,
+      .why-grid {
+        gap: 40px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quote-layout {
+        gap: 25px;
+      }
+
+      .footer-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 68px 0;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .topbar-item:first-child {
+        display: none;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand-mark {
+        width: 41px;
+        height: 41px;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 4% 20px;
+        background: #071426;
+        border-top: 1px solid rgba(255,255,255,.09);
+        box-shadow: 0 20px 30px rgba(0,0,0,.16);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 13px 10px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255,255,255,.07);
+      }
+
+      .nav-links .nav-cta {
+        text-align: center;
+        margin-top: 12px;
+        border: 0;
+      }
+
+      .hero {
+        min-height: 610px;
+        background-position: 58% center;
+      }
+
+      .hero-content {
+        padding: 75px 0 90px;
+      }
+
+      .hero h1 {
+        font-size: clamp(37px, 10vw, 56px);
+        letter-spacing: -1.7px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .quick-info {
+        margin-top: -25px;
+      }
+
+      .quick-info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-info-item {
+        padding: 17px 20px;
+      }
+
+      .quick-info-item + .quick-info-item {
+        border-left: 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .about-grid,
+      .why-grid,
+      .quote-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        gap: 35px;
+      }
+
+      .about-visual {
+        min-height: 330px;
+      }
+
+      .about-image {
+        height: 320px;
+      }
+
+      .about-label {
+        right: 10px;
+        bottom: 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 26px 23px;
+      }
+
+      .why-grid {
+        gap: 35px;
+      }
+
+      .why-visual,
+      .why-visual img {
+        min-height: 300px;
+        height: 300px;
+      }
+
+      .why-features {
+        gap: 12px;
+      }
+
+      .why-feature {
+        padding: 17px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 13px;
+      }
+
+      .process-card {
+        padding: 19px 16px;
+      }
+
+      .cta-banner {
+        padding: 30px 24px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .quote-info,
+      .quote-form {
+        padding: 25px 21px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .brand-copy strong {
+        font-size: 12px;
+      }
+
+      .brand-copy small {
+        font-size: 9px;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-features {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading h2 {
+        letter-spacing: -1px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-item">
+        <span>Regional &amp; Short-Haul Logistics</span>
+        <span>•</span>
+        <span>Dubai, UAE</span>
+      </div>
+      <div class="topbar-item">
+        <span>✉</span>
+        <a href="mailto:info@a2zlogistics@gmail.com">info@a2zlogistics@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="A2Z Logistics Group home">
+        <span class="brand-mark">A2Z</span>
+        <span class="brand-copy">
+          <strong>A2Z Logistics Group</strong>
+          <small>Moving Business Forward</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        type="button" aria-label="Open navigation menu"
+        aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#contact" class="nav-cta">Request a Quote ↗</a>
+      </nav>
+    </div>
+  </header>
+    <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">Regional Logistics Solutions</span>
+          <h1>Moving Your Business <span>Forward.</span></h1>
+          <p class="hero-description">
+            Reliable regional and short-haul logistics solutions designed
+            around your business needs. Connect with our team to discuss
+            your transport requirements and request a tailored quotation.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">
+              Request a Quote <span>↗</span>
+            </a>
+            <a class="btn btn-outline" href="#services">
+              Explore Our Services <span>→</span>
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span></span>
+            Logistics support based in Dubai, UAE
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info" aria-label="Company contact information">
+      <div class="container">
+        <div class="quick-info-grid">
+          <div class="quick-info-item">
+            <div class="info-icon">⌖</div>
+            <div>
+              <strong>Our Location</strong>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+
+          <div class="quick-info-item">
+            <div class="info-icon">☎</div>
+            <div>
+              <strong>Speak to Our Team</strong>
+              <a href="tel:8103700170">810 370 0170</a>
+            </div>
+          </div>
+
+          <div class="quick-info-item">
+            <div class="info-icon">✉</div>
+            <div>
+              <strong>Email Enquiries</strong>
+              <a href="mailto:info@a2zlogistics@gmail.com">
+                info@a2zlogistics@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img class="about-image"
+            src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1100&q=85"
+            alt="Freight containers prepared for transportation"
+            loading="lazy">
+          <div class="about-label">
+            <strong>A2Z Logistics</strong>
+            <span>Your Logistics Partner</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">About Our Company</span>
+          <h2>Logistics That Works Around Your Business</h2>
+          <p>
+            A2Z Logistics Group is focused on regional and short-haul
+            logistics solutions. We understand that dependable transport
+            coordination matters to businesses of every size.
+          </p>
+          <p>
+            Our goal is to make it easier for customers to discuss their
+            requirements, plan their transport needs and get in touch with
+            our team for a suitable solution.
+          </p>
+
+          <ul class="check-list">
+            <li><span class="check">✓</span> Regional and short-haul transport enquiries</li>
+            <li><span class="check">✓</span> Solutions discussed around your requirements</li>
+            <li><span class="check">✓</span> Direct communication with our team</li>
+            <li><span class="check">✓</span> Convenient quotation request process</li>
+          </ul>
+
+          <a class="btn btn-primary" href="#contact">
+            Discuss Your Requirements →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Logistics Services for Your Business</h2>
+          <p>
+            Explore our core service areas and contact us to discuss
+            availability, routes, cargo requirements and pricing.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="service-icon">↗</div>
+            <h3>Regional Transport</h3>
+            <p>
+              Discuss your regional transportation needs with our team
+              and explore a suitable approach for your delivery routes.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <div class="service-icon">⇢</div>
+            <h3>Short-Haul Logistics</h3>
+            <p>
+              Short-distance transport requirements for businesses
+              looking for practical logistics coordination.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <div class="service-icon">▣</div>
+            <h3>Business Cargo Enquiries</h3>
+            <p>
+              Share your cargo type, pickup location and destination
+              so our team can discuss the right service for your needs.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <div class="service-icon">⌖</div>
+            <h3>Route Coordination</h3>
+            <p>
+              Tell us about your preferred route and timing to discuss
+              possible transport arrangements with our team.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <div class="service-icon">◷</div>
+            <h3>Delivery Planning</h3>
+            <p>
+              Discuss expected collection and delivery requirements
+              to help plan your logistics needs.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">06</span>
+            <div class="service-icon">✉</div>
+            <h3>Custom Enquiries</h3>
+            <p>
+              Have a specific transport requirement? Send us the details
+              and our team can review your enquiry.
+            </p>
+            <a class="service-link" href="#contact">Enquire Now →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section" id="why-us">
+      <div class="container why-grid">
+        <div class="why-copy reveal">
+          <span class="eyebrow">Why A2Z Logistics</span>
+          <h2>A Straightforward Approach to Logistics</h2>
+          <p>
+            Every transport requirement is different. We focus on
+            understanding your needs first so the next steps can be
+            discussed clearly with our team.
+          </p>
+
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="feature-icon">◎</div>
+              <h3>Customer Focus</h3>
+              <p>We invite you to share your requirements and priorities.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon">↗</div>
+              <h3>Clear Enquiries</h3>
+              <p>Send route and cargo details in one convenient form.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon">⌖</div>
+              <h3>Regional Focus</h3>
+              <p>Regional and short-haul logistics enquiries are our focus.</p>
+            </div>
+
+            <div class="why-feature">
+              <div class="feature-icon">☏</div>
+              <h3>Direct Contact</h3>
+              <p>Reach our team by phone or email to discuss your needs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1100&q=85"
+            alt="Logistics and freight transportation"
+            loading="lazy">
+          <div class="why-image-caption">
+            <strong>Your Business. Your Route. Your Requirements.</strong>
+            <p>Get in touch to discuss a suitable logistics solution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>Start Your Logistics Enquiry in Four Steps</h2>
+          <p>
+            A simple way to share your requirements and begin a
+            conversation with our team.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <div class="process-step">01</div>
+            <h3>Contact Us</h3>
+            <p>Send your enquiry through the website form or email.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-step">02</div>
+            <h3>Share Details</h3>
+            <p>Provide cargo, pickup, destination and timing information.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-step">03</div>
+            <h3>Discuss Options</h3>
+            <p>Our team can review the details and discuss next steps.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-step">04</div>
+            <h3>Confirm Directly</h3>
+            <p>Confirm pricing, availability and arrangements with our team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+        <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <h2>Looking for a Logistics Solution?</h2>
+            <p>Tell us about your transport requirements and request a quotation.</p>
+          </div>
+          <a href="#contact" class="btn">Request a Quote ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Let's Discuss Your Requirements</h2>
+          <p>
+            Share a few details about your transport needs. You can also
+            contact A2Z Logistics Group directly by phone or email.
+          </p>
+        </div>
+
+        <div class="quote-layout">
+          <aside class="quote-info reveal">
+            <h3>Contact Our Team</h3>
+            <p>
+              Have a question about regional or short-haul logistics?
+              Get in touch to discuss your requirements.
+            </p>
+
+            <div class="contact-line">
+              <div class="line-icon">⌖</div>
+              <div>
+                <small>Our Location</small>
+                <strong>Dubai, United Arab Emirates</strong>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">☎</div>
+              <div>
+                <small>Phone</small>
+                <a href="tel:8103700170">810 370 0170</a>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">✉</div>
+              <div>
+                <small>Email Address</small>
+                <a href="mailto:info@a2zlogistics@gmail.com">
+                  info@a2zlogistics@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">◷</div>
+              <div>
+                <small>Enquiries</small>
+                <strong>Contact us to discuss availability</strong>
+              </div>
+            </div>
+          </aside>
+
+          <form class="quote-form reveal" id="quoteForm">
+            <h3>Request a Quotation</h3>
+            <p class="form-intro">
+              Complete the form below to prepare an email enquiry.
+            </p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="customerName">Full Name *</label>
+                <input id="customerName" name="customerName"
+                  type="text" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input id="companyName" name="companyName"
+                  type="text" placeholder="Your company">
+              </div>
+
+              <div class="form-group">
+                <label for="customerEmail">Email Address *</label>
+                <input id="customerEmail" name="customerEmail"
+                  type="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="customerPhone">Phone Number</label>
+                <input id="customerPhone" name="customerPhone"
+                  type="tel" placeholder="Your contact number">
+              </div>
+
+              <div class="form-group">
+                <label for="serviceType">Service Required *</label>
+                <select id="serviceType" name="serviceType" required>
+                  <option value="">Select a service</option>
+                  <option>Regional Transport</option>
+                  <option>Short-Haul Logistics</option>
+                  <option>Business Cargo Enquiry</option>
+                  <option>Route Coordination</option>
+                  <option>Delivery Planning</option>
+                  <option>Other Enquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cargoType">Cargo Type</label>
+                <input id="cargoType" name="cargoType"
+                  type="text" placeholder="Describe your cargo">
+              </div>
+
+              <div class="form-group">
+                <label for="pickupLocation">Pickup Location</label>
+                <input id="pickupLocation" name="pickupLocation"
+                  type="text" placeholder="Pickup location">
+              </div>
+
+              <div class="form-group">
+                <label for="deliveryLocation">Delivery Location</label>
+                <input id="deliveryLocation" name="deliveryLocation"
+                  type="text" placeholder="Destination">
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Additional Details *</label>
+                <textarea id="message" name="message"
+                  placeholder="Tell us about your requirements, cargo and preferred timing..."
+                  required></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Prepare Enquiry Email ↗
+            </button>
+
+            <p class="form-disclaimer">
+              This form opens your email application with your enquiry
+              prepared. It does not send or store information automatically.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Frequently Asked Questions</span>
+          <h2>Questions About Our Services</h2>
+          <p>Some useful information before you contact our team.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What services does A2Z Logistics Group focus on?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              A2Z Logistics Group focuses on regional and short-haul
+              logistics enquiries. Contact the team to discuss your
+              specific transport requirements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How can I request a quotation?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Complete the quotation form on this website or email
+              info@a2zlogistics@gmail.com with your requirements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What information should I provide?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Share your cargo type, pickup location, destination,
+              preferred timing and any other relevant details.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How can I confirm pricing and availability?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Contact the A2Z Logistics Group team directly to discuss
+              service availability, pricing and arrangements for your enquiry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="#home">
+            <span class="brand-mark">A2Z</span>
+            <span class="brand-copy">
+              <strong>A2Z Logistics Group</strong>
+              <small>Moving Business Forward</small>
+            </span>
+          </a>
+          <p>
+            Regional and short-haul logistics enquiries for businesses.
+            Contact our team to discuss your transportation requirements.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#contact">Request a Quote</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact Information</h3>
+          <ul class="footer-links">
+            <li>Dubai, United Arab Emirates</li>
+            <li><a href="tel:8103700170">810 370 0170</a></li>
+            <li>
+              <a href="mailto:info@a2zlogistics@gmail.com">
+                info@a2zlogistics@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> A2Z Logistics Group. All rights reserved.</p>
+        <p>Website designed by <strong>AzDar Web Studio</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"
+    type="button" aria-label="Back to top">↑</button>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close mobile menu after choosing a link
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const item = button.closest(".faq-item");
+        const isOpen = item.classList.toggle("open");
+
+        button.setAttribute("aria-expanded", String(isOpen));
+      });
+    });
+
+    // Quote form: prepare an email in the visitor's email application.
+    // This is not an online database or automatic form-submission service.
+    const quoteForm = document.getElementById("quoteForm");
+
+    quoteForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!quoteForm.reportValidity()) {
+        return;
+      }
+
+      const formData = new FormData(quoteForm);
+
+      const customerName = formData.get("customerName") || "";
+      const companyName = formData.get("companyName") || "";
+      const customerEmail = formData.get("customerEmail") || "";
+      const customerPhone = formData.get("customerPhone") || "";
+      const serviceType = formData.get("serviceType") || "";
+      const cargoType = formData.get("cargoType") || "";
+      const pickupLocation = formData.get("pickupLocation") || "";
+      const deliveryLocation = formData.get("deliveryLocation") || "";
+      const message = formData.get("message") || "";
+
+      const subject = "Website Quotation Enquiry - " + customerName;
+
+      const body = [
+        "A2Z Logistics Group - Quotation Enquiry",
+        "",
+        "Full Name: " + customerName,
+        "Company Name: " + companyName,
+        "Email: " + customerEmail,
+        "Phone: " + customerPhone,
+        "Service Required: " + serviceType,
+        "Cargo Type: " + cargoType,
+        "Pickup Location: " + pickupLocation,
+        "Delivery Location: " + deliveryLocation,
+        "",
+        "Additional Details:",
+        message
+      ].join("\n");
+
+      const mailto =
+        "mailto:info@a2zlogistics@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+
+    // Current year in footer
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    // Back-to-top button
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+      backToTop.classList.toggle("visible", window.scrollY > 450);
+    });
+
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Reveal elements when they enter the viewport
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add("show");
+      });
+    }
+
+    // Highlight the navigation link for the visible section
+    const pageSections = document.querySelectorAll(
+      "main section[id], header.site-header"
+    );
+
+    const sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && entry.target.id) {
+          const currentId = entry.target.id;
+
+          navLinks.querySelectorAll("a:not(.nav-cta)").forEach(function (link) {
+            const isActive = link.getAttribute("href") === "#" + currentId;
+            link.classList.toggle("active", isActive);
+          });
+        }
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+
+    pageSections.forEach(function (section) {
+      sectionObserver.observe(section);
+    });
+  </script>
+</body>
+</html>
